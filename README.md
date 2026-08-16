@@ -6,7 +6,7 @@
 
 ## What is ARG?
 
-**ARG** (Autonomous Reconstruction Group) is an intelligent, self-guided workspace designed to help you build software safely and easily.
+**ARG** is an intelligent, self-guided workspace designed to help you build software safely and easily.
 
 Building apps often comes with messy setup files, sudden bugs, or lost work when something goes wrong. ARG solves this by acting as a smart project manager and safety net:
 * **You focus on your ideas:** Just tell ARG what you want to build.
@@ -97,5 +97,5 @@ For a deep dive into the official rules and guidelines powering ARG:
 ## Credits
 
 * **Primary Creator & Operator:** Kelsea Ziegler ([kelseaziegler@gmail.com](mailto:kelseaziegler@gmail.com))
-* **Co-Architect Partner:** Google Gemini
+* **Co-Architect Partner:** Many AI's including Google Gemini, ChatGPT, Perplexity, CoPilot and others. 
 * **Status:** Operational Constitution v1.0 RC2
