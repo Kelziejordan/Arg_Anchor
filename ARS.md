@@ -22,3 +22,39 @@
   - `arg_canonical_intent`
   - `arg_recent_projects_v1.6`
   - `argos_execution_journal`
+
+---
+
+Runtime expectations
+ARG runtime behavior should make progress, failure, and recovery visible.
+This includes:
+explicit execution state,
+visible checkpoints,
+validation boundaries,
+verification outcomes,
+failure visibility,
+pause and resume support,
+and recoverable workspace continuity.
+Validation boundaries
+External inputs, generated outputs, and execution-affecting state transitions should cross explicit validation boundaries before they are treated as safe advancement.
+Observability
+The runtime should expose enough evidence for a user or builder to answer:
+what changed,
+what passed,
+what failed,
+what was approved,
+and what can be resumed safely.
+Recovery behavior
+Recovery should support:
+restore to a known prior state,
+continuation after interruption,
+inspection of prior checkpoints,
+and review of verification or failure evidence linked to significant work steps.
+Verification behavior
+Verification should remain distinct from execution. Runtime state should make it clear whether work is:
+proposed,
+in progress,
+completed but unverified,
+verified,
+failed,
+or restored from a prior state.
