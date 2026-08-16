@@ -1,76 +1,102 @@
 # ARG Anchor
 
-> *"Describe what you want to build. We'll organize the details, secure the architecture, and ensure your progress is never lost."*
-
----
+> *"Describe what you want to build. ARG organizes the work, governs execution, verifies progress, and helps you recover when something breaks."*
 
 ## What is ARG?
 
-**ARG** is an intelligent, self-guided workspace designed to help you build software safely and easily.
+**ARG** is a recoverable AI build workspace that helps users move from intent to working software through structured planning, governed execution, visible verification, and checkpoint-based continuity.
 
-Building apps often comes with messy setup files, sudden bugs, or lost work when something goes wrong. ARG solves this by acting as a smart project manager and safety net:
-* **You focus on your ideas:** Just tell ARG what you want to build.
-* **ARG handles the structure:** It breaks your goal down into clear blueprints, writes clean code, and checks for potential bugs automatically.
-* **Your progress is safe:** Every action is automatically saved in a continuous ledger, so you can restore or roll back your project at any time.
+ARG is designed for a common problem in AI-assisted building: generation is easy, but preserving progress, recovering from bad changes, and keeping work aligned with the actual objective is much harder. ARG addresses that by combining guided workflow structure with recovery and verification.
 
----
+## Core value
 
-## Key Features in Simple Terms
+ARG is built around five practical outcomes:
 
-### 1. Simple Mode vs. Detailed Mode
-* **Operator Mode (Default):** A clean, clutter-free screen where you can focus on your goals without being distracted by technical code background noise.
-* **Builder Mode:** A detailed view for developers who want to inspect safety rules, check live system metrics, and customize system settings.
+- **Reduce project chaos:** turn rough intent into a structured workflow.
+- **Preserve progress:** maintain checkpointed continuity instead of fragile one-shot generation.
+- **Govern execution:** route meaningful actions through visible rules, checks, and progression boundaries.
+- **Verify outcomes:** distinguish generated output from work that has actually been validated.
+- **Support both simple and advanced users:** keep the default experience clean while preserving deeper visibility for technical builders.
 
-### 2. Automatic Safety Checks & Rules
-ARG automatically runs your project through **9 Core Engineering Rules** (Mandates) to make sure your code stays fast, secure, and well-organized—preventing crashes before they happen.
+## Product workflow
 
-### 3. Automatic Backups & Recovery
-Never worry about losing your work. ARG logs every change to a secure history timeline. If an update breaks something, you can restore your workspace to any previous point with a single click.
+ARG organizes work through a consistent lifecycle:
 
-### 4. 100% Portable (Runs Anywhere)
-ARG doesn't lock you into a proprietary cloud server. You can download your project and run it anywhere—on your own laptop, in a Docker container, or hosted on your own server.
+1. **Intake:** capture what the user wants to build.
+2. **Scoping:** reduce ambiguity and identify constraints.
+3. **Planning:** create a structured execution path.
+4. **Execution:** perform bounded work steps.
+5. **Verification:** confirm whether the intended result was actually achieved.
+6. **Workspace:** keep the project in a usable, recoverable state ready for continuation.
 
----
+## Why ARG is different
 
-## How ARG Works (The 6 Simple Steps)
+Many AI build tools focus on output generation. ARG focuses on **continuity**.
 
-1. **Intake (Step 0):** You enter what you want to build or achieve.
-2. **Scoping (Step 1):** ARG asks a few clear questions to make sure it understands your goals and constraints.
-3. **Planning (Step 2):** A step-by-step execution blueprint is created.
-4. **Execution (Step 3):** ARG builds the project features step-by-step.
-5. **Verification (Step 4):** ARG checks the final result with one fundamental question: *"Did we actually achieve what you wanted?"*
-6. **Workspace (Step 5):** Your project is live, verified, and ready for you to use or expand!
+That means:
 
----
+- changes should be visible,
+- progress should be recoverable,
+- failed steps should not erase project momentum,
+- and completion should require verification rather than assumption.
 
-## How to Run ARG on Your Own Computer
+ARG is intended to function as both:
 
-You can easily run ARG locally or host it on your own server.
+- a guided build workspace for users, and
+- a structured internal delivery environment for higher-trust software and architecture work.
 
-### Option 1: Run Locally (Node.js)
+## Modes
 
-1. **Download/Clone** the project files to your computer.
-2. Open your terminal in the project folder and install dependencies:
-   ```bash
-   npm install
-   ```
-3. Start the app in development mode:
-   ```bash
-   npm run dev
-   ```
-4. Open your web browser and go to `http://localhost:3000`.
+### Operator Mode
 
-To build for production:
+Operator Mode keeps the workspace low-noise and forward-moving. It emphasizes the current objective, the next best action, and simple recovery paths without overwhelming the user with internal detail.
+
+### Builder Mode
+
+Builder Mode exposes deeper execution detail, policy surfaces, diagnostics, verification records, and system context for users who need tighter control over the workflow.
+
+## Recovery and trust
+
+ARG treats recovery as a product feature, not a background utility.
+
+Users should be able to:
+
+- inspect meaningful checkpoints,
+- understand what changed,
+- review verification results,
+- return to a known good state,
+- and continue work without losing the wider project context.
+
+## Portability
+
+ARG is designed to remain portable and self-hostable.
+
+- Run locally with Node.js.
+- Containerize with Docker.
+- Keep control over where your project lives.
+- Avoid unnecessary platform lock-in.
+
+## Run locally
+
+```bash
+npm install
+npm run dev
+```
+
+Then open:
+
+```text
+http://localhost:3000
+```
+
+## Build for production
+
 ```bash
 npm run build
 npm run start
 ```
 
----
-
-### Option 2: Run with Docker
-
-If you prefer using Docker, you can containerize and launch ARG with this simple setup:
+## Docker
 
 ```dockerfile
 FROM node:20-alpine
@@ -83,15 +109,15 @@ EXPOSE 3000
 CMD ["npm", "run", "start"]
 ```
 
----
+## Governance docs
 
-## Project Governance & Legal Docs
+- **ACR.md** â€” Architectural boundaries and non-bypass constraints.
+- **AOC.md** â€” Workflow constitution, progression rules, and operating expectations.
+- **ARS.md** â€” Runtime expectations for validation, observability, recovery, and execution behavior.
 
-For a deep dive into the official rules and guidelines powering ARG:
-* **[ACR.md](./ACR.md):** Architectural Law & Safety Boundaries.
-* **[AOC.md](./AOC.md):** Operational Constitution (AOC v1.0 RC2) — Rules for workflows, state management, and user experience.
-* **[ARS.md](./ARS.md):** Architectural Runtime Specifications & Technical Details.
+## Current direction
 
+ARG should continue evolving toward a recoverable, governed AI development workspace where progress is structured, evidence is visible, and failed changes are recoverable without sacrificing speed.
 ---
 
 ## Credits
