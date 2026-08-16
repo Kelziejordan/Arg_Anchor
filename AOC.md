@@ -225,4 +225,35 @@ Before any specification in the document stack may be declared canonical/FROZEN,
 ## 15. Versioning and Change Control
 This document is **AOC v1.0 RC2** and is NOT yet Canonical FROZEN.
 
+---
+
+Workflow constitution
+ARG operates through a structured lifecycle:
+Intake
+Scoping
+Planning
+Execution
+Verification
+Workspace continuity
+A stage should advance only when the current stage has produced enough evidence to justify progression.
+Progression rules
+Intake should produce a clear project objective.
+Scoping should reduce ambiguity and identify relevant constraints.
+Planning should produce a structured next-step path.
+Execution should remain bounded by the active objective and available constraints.
+Verification should determine whether the intended result was actually achieved.
+Workspace continuity should preserve the resulting state in a recoverable form.
+Operator and Builder behavior
+Operator Mode should stay low-noise, directive, and momentum-preserving.
+Builder Mode should expose deeper evidence, validation detail, diagnostics, and policy surfaces.
+Advanced visibility should not be required for normal forward progress.
+Decision compression
+When ambiguity is high, ARG should reduce overload by:
+identifying the next blocking issue,
+narrowing options to a small viable set,
+surfacing visible tradeoffs,
+and presenting a recommended next move.
+Verification rule
+Generated output is not sufficient proof of completion. A task should only be treated as complete after verification against the active objective or declared success condition.
+
 Upon final constitutional review incorporating all outstanding architectural decisions, it MAY be promoted to AOC v1.0 (Canonical) and marked FROZEN. Once FROZEN, changes MUST be classified as Clarification, Correction, or Extension.
